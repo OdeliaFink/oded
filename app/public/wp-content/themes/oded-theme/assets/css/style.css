@@ -10,7 +10,7 @@
 /* Set up basic font family and global styles */
 html {
   font-size: 16px;
-  line-height: 1.5;
+
 }
 
 body {
@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* Full viewport height */
+
   padding: 0;
   margin: 0;
   /* Ensure there's no margin */
@@ -62,7 +62,7 @@ a {
 /* Layout */
 header, footer {
   background-color: #fff;
-  padding: 20px 0;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -137,9 +137,51 @@ button:focus {
   text-decoration: none;
 }
 
-.site-header {
-  margin-inline: 1.5rem;
+.header-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
+
+.header-desc {
+  font-weight: 400;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -1.5rem;
+  gap: 2rem;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+/* CSS */
+.black-divider {
+  border: none;
+  width: 90%;
+  margin-inline: auto;
+  margin-bottom: 40px;
+
+  /* Remove default border */
+  height: 1px;
+  /* Set the height of the divider */
+  background-color: black;
+  /* Set the color of the divider */
+
+
+}
+
 
 .main-navigation {}
 

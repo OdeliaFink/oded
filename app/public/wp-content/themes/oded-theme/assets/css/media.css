@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  .header-desc {
+    visibility: hidden;
+  }
+
+  .site-header {
+    width: auto !important;
+  }
+
+}

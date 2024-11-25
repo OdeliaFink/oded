@@ -8,16 +8,15 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <header class="site-header"
-    style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
-    <div class="header-logo" style="display: flex; flex-direction: row; align-items: center; gap: 20px;">
+  <header class="site-header">
+    <div class="header-logo">
       <a href="<?php echo esc_url(home_url('/')); ?>">
         <h1>ODED</h1>
       </a>
-      <p style="font-weight: 400;">DEVELOPER, DESIGNER</p>
+      <p class="header-desc">DEVELOPER, DESIGNER</p>
     </div>
     <nav class="main-navigation">
-      <div style="display: flex; flex-direction: row; align-items: center; margin-top: -1.5rem; gap: 2rem;">
+      <div class="menu-items">
         <?php
         wp_nav_menu(array(
           'theme_location' => 'primary', // The location of the menu
@@ -28,3 +27,4 @@
       </div>
     </nav>
   </header>
+  <hr class="black-divider">
