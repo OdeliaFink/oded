@@ -189,8 +189,19 @@ button:focus {
 footer {
   margin-top: auto;
   /* Push footer to the bottom */
-  background-color: #222;
-  color: #fff;
+  background-color: #D9D9D9;
+  color: black;
   padding: 20px 0;
   text-align: center;
 }
+
+.footer-logo a h1 {
+  font-size: 79px;
+  font-weight: 200;
+  letter-spacing: -12px;
+  text-transform: uppercase;
+  font-family: 'Rock 3D', sans-serif;
+
+}
+
+.site-footer {}

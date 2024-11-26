@@ -13,7 +13,7 @@
       <a href="<?php echo esc_url(home_url('/')); ?>">
         <h1>ODED</h1>
       </a>
-      <p class="header-desc">DEVELOPER, DESIGNER</p>
+      <p class="header-desc">CREATIVE WEB STUDIO</p>
     </div>
     <nav class="main-navigation">
       <div class="menu-items">
@@ -23,7 +23,7 @@
           'menu_class' => 'main-menu',
         ));
         ?>
-        <a href="#">cv</a>
+
       </div>
     </nav>
   </header>
