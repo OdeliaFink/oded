@@ -1,0 +1,49 @@
+/* Global container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Layout sections */
+header, footer {
+  background-color: #fff;
+  margin-top: var(--spacing-lg);
+  text-align: center;
+}
+
+footer {
+  margin-top: auto;
+  /* Push footer to the bottom */
+  background-color: #D9D9D9;
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-logo a h1 {
+  font-size: 79px;
+  font-weight: 200;
+  letter-spacing: -12px;
+  text-transform: uppercase;
+  font-family: 'Rock 3D', sans-serif;
+
+}
+
+main {
+  padding: var(--spacing-lg) 0;
+
+}
+
+section {
+  margin-bottom: var(--spacing-lg);
+  margin-inline: 3rem;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+}

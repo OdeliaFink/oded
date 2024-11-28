@@ -1,0 +1,24 @@
+:root {
+  /* Colors */
+  --color-primary: #0066cc;
+  --color-secondary: #005bb5;
+  --color-accent: #333;
+  --color-background: white;
+  --color-footer: #D9D9D9;
+
+  /* Typography */
+  --font-primary: 'Roboto', Arial, sans-serif;
+  --font-secondary: 'Rock 3D', cursive;
+  --font-size-base: 16px;
+
+  /* Spacing */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 40px;
+
+  /* Border */
+  --border-radius: 5px;
+
+  /* Transition */
+  --transition-default: all 0.3s ease-in-out;
+}
