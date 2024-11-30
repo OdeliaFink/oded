@@ -4,6 +4,19 @@
     gap: 0px;
   }
 
+  #hamburger {
+    width: 68px;
+    height: 68px;
+  }
+
+  header {
+    height: 4rem;
+  }
+
+  .header-desc {
+    font-size: 10px;
+  }
+
   .site-header {
     width: auto !important;
     flex-direction: column;

@@ -6,7 +6,8 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-size: var(--font-size-base);
-  margin-bottom: 1.5em;
+  margin-bottom: .5em;
+  margin-left: .5em;
 }
 
 ul, ol {
