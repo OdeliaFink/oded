@@ -1,63 +1,6 @@
-/* Import CSS Files in the Right Order */
-
-/* Variables come first to define reusable values */
 @import 'variables.css';
-
-/* Base styles (resets and global styles) */
 @import 'base.css';
-
-/* Typography */
 @import 'typography.css';
-
-/* Layout-related styles */
 @import 'layout.css';
-
-/* Components (buttons, headers, footers, forms, etc.) */
 @import 'components.css';
-
-/* Base header styles */
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-
-.menu-toggle {
-  display: none;
-  /* Hidden by default */
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.menu-items {
-  display: flex;
-  gap: 1rem;
-}
-
-/* Mobile-specific styles */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    /* Show hamburger button */
-  }
-
-  .menu-items {
-    display: none;
-    /* Hide regular menu tabs */
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-  }
-
-  .menu-items.visible {
-    display: flex;
-  }
-}
+@import 'media.css';

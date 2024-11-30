@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <section>
+  <div id="react-root"></div>
 
   <div class="home-content">
     <h1>Welcome to Oded Studios</h1>
