@@ -15,15 +15,24 @@ header, footer {
 
 footer {
   margin-top: auto;
-  /* Push footer to the bottom */
-  background-color: #D9D9D9;
+  background-color: var(--color-secondary);
   color: black;
-  padding: 20px 0;
+  padding: 15px 0;
   text-align: center;
 }
 
+.footer-svg-top {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -45px;
+}
+
 .footer-logo a h1 {
-  font-size: 79px;
+  font-size: var(--size-xxl);
   font-weight: 200;
   letter-spacing: -12px;
   text-transform: uppercase;

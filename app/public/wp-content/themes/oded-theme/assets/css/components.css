@@ -97,7 +97,40 @@ header nav li a {
 
 }
 
+.current-date {
+  text-align: right;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
 
+.month {
+  font-family: 'DM Serif Text' !important;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: var(--size-md);
+}
+
+.date {
+  font-family: 'Rock 3D';
+  font-size: var(--size-xl);
+}
+
+.star {
+  font-size: var(--size-xl);
+  font-family: var(--font-secondary);
+}
+
+
+
+.current-date h1 {
+  font-family: 'Rock 3D';
+  font-size: var(--size-xxxl);
+  font-weight: var(--weight-sm);
+  letter-spacing: -22px;
+}
 
 
 

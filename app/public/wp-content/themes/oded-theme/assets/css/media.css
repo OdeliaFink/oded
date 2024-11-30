@@ -9,6 +9,16 @@
     height: 68px;
   }
 
+  .footer-svg-top {
+    top: -27px;
+  }
+
+  section {
+    margin-bottom: var(--spacing-lg);
+    margin-inline: 1rem;
+  }
+
+
   header {
     height: 4rem;
   }
