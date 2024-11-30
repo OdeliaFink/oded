@@ -38,6 +38,8 @@ input, textarea, select {
   text-transform: lowercase;
 }
 
+
+
 /* Header */
 .site-header {
   display: flex;
@@ -54,14 +56,6 @@ input, textarea, select {
   margin-top: 0.4rem;
 }
 
-/* Menu Items */
-.menu-items {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: -1.5rem;
-  gap: 2rem;
-}
 
 /* Black Divider */
 .black-divider {
