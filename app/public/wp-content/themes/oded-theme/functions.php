@@ -80,6 +80,7 @@ function enqueue_react_app()
     true // Load in the footer
   );
 
+
   // Add type="module" attribute
   add_filter('script_loader_tag', function ($tag, $handle, $src) {
     if ('header-toggle' === $handle) {
@@ -90,5 +91,40 @@ function enqueue_react_app()
 }
 add_action('wp_enqueue_scripts', 'enqueue_react_app');
 
+function enqueue_hero_text_script()
+{
+  // Enqueue Framer Motion
+  wp_enqueue_script(
+    'framer-motion',
+    'https://cdn.jsdelivr.net/npm/framer-motion@11.12.0/dist/framer-motion.umd.js',
+    array(),
+    null,
+    true
+  );
 
+  // Enqueue hero-text.js and mark it as a module
+  wp_enqueue_script(
+    'hero-text',
+    get_stylesheet_directory_uri() . '/assets/js/hero-text.js',
+    array('framer-motion'),
+    null,
+    true
+  );
+
+  // Mark hero-text.js as a module
+  add_filter(
+    'script_loader_tag',
+    function ($tag, $handle) {
+      if ('hero-text' === $handle) {
+        return str_replace('<script', '<script type="module"', $tag);
+      }
+      return $tag;
+    },
+    10,
+    2
+  );
+
+
+}
+add_action('wp_enqueue_scripts', 'enqueue_hero_text_script');
 ?>

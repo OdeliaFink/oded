@@ -6,6 +6,10 @@
   padding: 0 var(--spacing-md);
 }
 
+.home-content {
+  margin-block: 3rem;
+}
+
 /* Layout sections */
 header, footer {
   background-color: #fff;
@@ -28,7 +32,7 @@ footer {
   margin: 0;
   padding: 0;
   position: relative;
-  top: -45px;
+  top: -40px;
 }
 
 .footer-logo a h1 {

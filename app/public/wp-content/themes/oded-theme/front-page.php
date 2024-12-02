@@ -1,23 +1,30 @@
 <?php get_header(); ?>
+<div>
+  <section>
 
-<section>
-  <div id="react-root"></div>
-  <?php
-  // Get the current date
-  $current_month = date('M'); // Format: "Friday, October 6, 2023"
-  $current_date = date('j'); // Format: "Friday, October 6, 2023"
-  ?>
-  <div class="current-date">
-    <p class="star">*</p>
-    <h1 class="date"><?php echo $current_date; ?></h1>
-    <p class="month">
-      <?php echo $current_month; ?></p>
-  </div>
-  <div class="home-content">
-    <h1>Welcome to Oded Studios</h1>
-    <p>We specialize in creative design and development.</p>
+    <div id="react-root"></div>
+    <?php
+    // Get the current date
+    $current_month = date('M'); // Format: "Friday, October 6, 2023"
+    $current_date = date('j'); // Format: "Friday, October 6, 2023"
+    ?>
+    <div class="current-date">
+      <p class="star">*</p>
+      <h1 class="date"><?php echo $current_date; ?></h1>
+      <p class="month">
+        <?php echo $current_month; ?></p>
+    </div>
+    <div id="hero-text">
+      <h1>A WEB DESIGN STUDIO UNIFYING FORM AND FUNCTION</h1>
+    </div>
+    <div style="text-align: right;">
+      <button>LEARN MORE</button>
+    </div>
+    <div class="service-heading">
+      <h1 style="font-family: 'DM Serif Text'; font-size: 70px;">SERVICES</h1>
+    </div>
 
-  </div>
-</section>
+  </section>
 
+</div>
 <?php get_footer(); ?>
