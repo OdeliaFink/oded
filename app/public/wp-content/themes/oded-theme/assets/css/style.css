@@ -4,3 +4,30 @@
 @import 'layout.css';
 @import 'components.css';
 @import 'media.css';
+
+.main-services-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.service-container {
+  height: 317px;
+  width: 326px;
+  border-radius: 10px;
+  background-color: #9FB99F;
+  color: white;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9rem;
+  padding-top: 26px;
+}
+
+.card h1 {
+  font-size: var(--size-sm2);
+  max-width: 80%;
+}
