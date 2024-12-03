@@ -4,3 +4,12 @@
 @import 'layout.css';
 @import 'components.css';
 @import 'media.css';
+
+.slick-slide {
+  opacity: 0;
+  /* Hidden by default */
+  transform: translateY(50px);
+  /* Offset slightly below */
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  /* For smoother fallback animations */
+}

@@ -13,12 +13,12 @@
     top: -23px;
   }
 
-  .service-container {
+  /* .service-container {
     width: 270px;
-  }
+  } */
 
   .card {
-    gap: 4rem;
+    gap: 8rem;
     padding-inline: 10px;
 
   }

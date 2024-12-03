@@ -28,6 +28,43 @@ function enqueue_react_marquee_assets()
 }
 add_action('wp_enqueue_scripts', 'enqueue_react_marquee_assets');
 
+function enqueue_custom_scripts()
+{
+  // Enqueue GSAP and ScrollTrigger
+  wp_enqueue_script(
+    'gsap',
+    'https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js',
+    array(),
+    null,
+    true
+  );
+  wp_enqueue_script(
+    'gsap-scrolltrigger',
+    'https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js',
+    array('gsap'),
+    null,
+    true
+  );
+
+  // Enqueue React-Marquee as a module
+  wp_enqueue_script(
+    'react-marquee',
+    get_stylesheet_directory_uri() . '/assets/js/react-marquee.js',
+    array(),
+    null,
+    true
+  );
+  add_filter('script_loader_tag', function ($tag, $handle, $src) {
+    if ('react-marquee' === $handle) {
+      $tag = '<script type="module" src="' . esc_url($src) . '"></script>';
+    }
+    return $tag;
+  }, 10, 3);
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
+
+
 function oded_theme_enqueue_styles()
 {
   // Parent theme stylesheet
