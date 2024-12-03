@@ -43,19 +43,19 @@
           'description' => 'Your business is unique and your website should reflect that. I curate bespoke websites that stand out.',
         ],
         [
-          'title' => 'FEATURE DESIGN & BUILD',
+          'title' => 'FULL WEBSITE BUILD & DEPLOY',
           'description' => 'Your business is unique and your website should reflect that. I curate bespoke websites that stand out.',
         ],
         [
-          'title' => 'FEATURE DESIGN & BUILD',
+          'title' => 'CMS DESIGN & ARCHITECTURE',
           'description' => 'Your business is unique and your website should reflect that. I curate bespoke websites that stand out.',
         ],
         [
-          'title' => 'FEATURE DESIGN & BUILD',
+          'title' => 'SEO',
           'description' => 'Your business is unique and your website should reflect that. I curate bespoke websites that stand out.',
         ],
         [
-          'title' => 'FEATURE DESIGN & BUILD',
+          'title' => 'BRANDING',
           'description' => 'Your business is unique and your website should reflect that. I curate bespoke websites that stand out.',
         ],
         // Repeat this array for additional slides as needed
@@ -83,6 +83,7 @@
       <?php endforeach; ?>
     </div>
   </section>
+
 </div>
 
 <?php get_footer(); ?>
