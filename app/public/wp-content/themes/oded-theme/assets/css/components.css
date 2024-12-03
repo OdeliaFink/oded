@@ -23,6 +23,14 @@ button:hover {
   gap: 8rem;
   padding-top: 26px;
   padding-inline: 20px;
+  cursor: grab;
+  /* Default "grab" cursor for draggable appearance */
+  transition: transform 0.2s ease;
+}
+
+.card:active {
+  cursor: grabbing;
+  /* "Grabbing" cursor when the card is being dragged */
 }
 
 
@@ -169,7 +177,7 @@ header nav li a {
 
 .service-container {
   height: 317px;
-  width: 326px;
+  /* max-width: 326px; */
   border-radius: 10px;
   background-color: white;
   border: 1px solid var(--color-primary);
@@ -197,28 +205,13 @@ header nav li a {
   font-size: 20px;
 }
 
-.slick-slide {
-  margin-right: 24px;
-  /* Adjust gap between slides */
-  flex: 1 0 calc(25% - 20px);
-  /* Ensure 4 slides fit in the viewport */
-  max-width: calc(25% - 20px);
-  /* Match flex width for proper spacing */
-  box-sizing: border-box;
-}
 
-.card {
-  cursor: grab;
-  /* Default "grab" cursor for draggable appearance */
-  transition: transform 0.2s ease;
-  /* Smooth transition for hover effects */
-}
 
-.card:active {
-  cursor: grabbing;
-  /* "Grabbing" cursor when the card is being dragged */
-}
 
+.slick-track {
+  display: flex;
+  gap: 1rem;
+}
 
 
 .description {
@@ -226,9 +219,7 @@ header nav li a {
 }
 
 
-.slick-track {
-  display: flex !important;
-}
+
 
 
 .read-more {

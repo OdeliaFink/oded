@@ -1,29 +1,31 @@
 jQuery(document).ready(function ($) {
-  // Initialize Slick Carousel
   $('.slick.marquee').slick({
     autoplay: false,
-    slidesToShow: 4,
+    slidesToShow: 4, // Default number of slides to show on desktop
     slidesToScroll: 1,
-    infinite: false,
+    infinite: false, // Do not loop
     arrows: true, // Enable arrows
     dots: false, // Disable dots
     adaptiveHeight: true,
-    accessibility: false,
-    prevArrow: '<button class="slick-prev custom-arrow"></button>', // Custom Left Arrow
-    nextArrow: '<button class="slick-next custom-arrow"></button>', // Custom Right Arrow
+    accessibility: true,
+    edgeFriction: 0.2,
+    prevArrow: '<button class="slick-prev custom-arrow"></button>',
+    nextArrow: '<button class="slick-next custom-arrow"></button>',
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2, // Show 1 slide on tablets
           slidesToScroll: 1,
+          arrows: true,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 1, // Show 1 slide on mobile
           slidesToScroll: 1,
+          arrows: true,
         },
       },
     ],

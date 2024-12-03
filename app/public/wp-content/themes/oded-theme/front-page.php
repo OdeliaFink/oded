@@ -51,11 +51,11 @@
           'description' => 'Your business is unique and your website should reflect that. I curate bespoke websites that stand out.',
         ],
         [
-          'title' => 'SEO',
+          'title' => 'SEO TECH STRATEGY <br> ',
           'description' => 'Your business is unique and your website should reflect that. I curate bespoke websites that stand out.',
         ],
         [
-          'title' => 'BRANDING',
+          'title' => 'FULL WEB PACKAGE',
           'description' => 'Your business is unique and your website should reflect that. I curate bespoke websites that stand out.',
         ],
         // Repeat this array for additional slides as needed
