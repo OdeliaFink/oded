@@ -49,38 +49,35 @@ scriptGsap.onload = () => {
         const cards = document.querySelectorAll('.slick-slide');
 
         cards.forEach((card, index) => {
-          // Determine entry direction based on index (left or right of viewport)
+          // Alternate entry directions (left or right)
           const isLeft = index % 2 === 0; // Alternate left and right
-          const xStart = isLeft ? '-100vw' : '100vw'; // Start from outside the viewport
-          const yStart = Math.random() * 100 - 50; // Slight vertical randomness
+          const xStart = isLeft ? '-150vw' : '150vw'; // Start from far outside viewport
 
+          // Scroll-linked animation
           gsap.fromTo(
             card,
             {
-              opacity: 0,
-              x: xStart, // Start from outside viewport
-              y: yStart, // Randomized vertical offset
-              rotation: isLeft ? -10 : 10, // Slight rotation based on direction
+              x: xStart, // Start far outside the viewport
+              y: 0, // Neutral vertical position
+              opacity: 0, // Fully hidden
             },
             {
-              opacity: 1,
-              x: 0,
-              y: 0,
-              rotation: 0, // Align perfectly in carousel
+              x: 0, // Move into position
+              y: 0, // Stay aligned vertically
+              opacity: 1, // Fade in
               duration: 1,
-              ease: "power2.out",
+              ease: "none", // No easing (linear)
               scrollTrigger: {
                 trigger: card,
-                start: "top 90%", // Trigger when card enters viewport
-                end: "top 30%", // Animation duration based on scroll
-                toggleActions: "play none none reverse", // Reverses animation on scroll up
+                start: "top bottom", // Animation starts when card is at the bottom of the viewport
+                end: "top 40%", // Animation ends when card reaches 20% of the viewport
+                scrub: true, // Smooth animation tied to scroll position
               },
             }
           );
         });
       }, 500); // Timeout to ensure Slick carousel initializes first
-
-      // `read-more` Button Functionality
+ 
       $('.read-more-container').on('click', function () {
         const container = $(this);
         const button = container.find('.read-more');
