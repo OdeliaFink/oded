@@ -4,11 +4,13 @@ jQuery(document).ready(function ($) {
     autoplay: false,
     slidesToShow: 4,
     slidesToScroll: 1,
-    variableWidth: false,
     infinite: false,
-    arrows: false,
-    dots: true,
+    arrows: true, // Enable arrows
+    dots: false, // Disable dots
     adaptiveHeight: true,
+    accessibility: false,
+    prevArrow: '<button class="slick-prev custom-arrow"></button>', // Custom Left Arrow
+    nextArrow: '<button class="slick-next custom-arrow"></button>', // Custom Right Arrow
     responsive: [
       {
         breakpoint: 768,
@@ -26,6 +28,14 @@ jQuery(document).ready(function ($) {
       },
     ],
   });
+
+
+ 
+
+  // Initialize Slick with the arrow wrapping
+  $('.slick.marquee').slick('refresh');
+
+  
 
   $('.read-more-container').on('click', function () {
     const container = $(this);
