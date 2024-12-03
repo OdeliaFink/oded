@@ -10,6 +10,18 @@
   margin-block: 3rem;
 }
 
+button.slick-prev, button.slick-next {
+  margin-top: 3rem;
+  display: block !important;
+  /* Force visibility */
+
+  /* Highlight arrows temporarily */
+  color: white !important;
+  z-index: 1000;
+  /* Ensure they appear above other elements */
+}
+
+
 /* Layout sections */
 header, footer {
   background-color: #fff;
