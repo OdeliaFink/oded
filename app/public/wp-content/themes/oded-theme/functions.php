@@ -127,4 +127,33 @@ function enqueue_hero_text_script()
 
 }
 add_action('wp_enqueue_scripts', 'enqueue_hero_text_script');
+
+function enqueue_react_marquee_assets()
+{
+  // Load jQuery (WordPress includes jQuery by default)
+  wp_enqueue_script('jquery');
+  wp_enqueue_style('slick-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css', array(), null);
+
+  // Slick Carousel Theme (optional)
+  wp_enqueue_style('slick-theme-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css', array('slick-css'), null);
+
+  // Slick Carousel JS
+  wp_enqueue_script('slick-js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', array('jquery'), null, true);
+
+  // React and ReactDOM
+  wp_enqueue_script('react', 'https://unpkg.com/react@17/umd/react.development.js', array(), null, true);
+  wp_enqueue_script('react-dom', 'https://unpkg.com/react-dom@17/umd/react-dom.development.js', array('react'), null, true);
+
+  // Custom marquee script
+  wp_enqueue_script(
+    'react-marquee',
+    get_stylesheet_directory_uri() . '/assets/js/react-marquee.js',
+    array('jquery', 'react', 'react-dom'), // Ensure jQuery is listed as a dependency
+    null,
+    true
+  );
+
+}
+add_action('wp_enqueue_scripts', 'enqueue_react_marquee_assets');
+
 ?>

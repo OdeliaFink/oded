@@ -5,29 +5,45 @@
 @import 'components.css';
 @import 'media.css';
 
-.main-services-container {
-  display: flex;
-  gap: 1rem;
+
+
+
+
+
+
+
+
+.slick-slide {
+  margin-right: 24px;
+  /* Adjust gap between slides */
+  flex: 1 0 calc(25% - 20px);
+  /* Ensure 4 slides fit in the viewport */
+  max-width: calc(25% - 20px);
+  /* Match flex width for proper spacing */
+  box-sizing: border-box;
 }
 
-.service-container {
-  height: 317px;
-  width: 326px;
-  border-radius: 10px;
-  background-color: #9FB99F;
-  color: white;
+/* 
+.slick-slide :hover {
+  cursor: grab;
+} */
+
+.slick-track {
+  display: flex !important;
 }
 
 
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 9rem;
-  padding-top: 26px;
+.read-more {
+  background-color: transparent;
+  padding: 0;
+  color: #9FB99F;
+  text-transform: uppercase;
+  cursor: pointer;
+
 }
 
-.card h1 {
-  font-size: var(--size-sm2);
-  max-width: 80%;
+.read-more :hover {
+  background-color: transparent;
+
+
 }

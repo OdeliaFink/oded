@@ -51,6 +51,7 @@ main {
 
 section {
   margin-bottom: var(--spacing-lg);
+
   margin-inline: 8rem;
 }
 

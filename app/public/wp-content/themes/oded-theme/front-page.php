@@ -20,38 +20,99 @@
     <div style="text-align: right;">
       <button>LEARN MORE</button>
     </div>
+  </section>
+
+  <section class="service-section">
     <div class="service-heading">
       <h1 style="font-family: 'DM Serif Text'; font-size: 70px;">SERVICES</h1>
     </div>
+    <div class="slick marquee m-container">
+      <div class="slick-slide">
+        <div class="inner">
+          <div class="service-container">
+            <div class="card">
+              <h1>FEATURE DESIGN & BUILD</h1>
+              <div class="read-more-container">
+                <p class="read-more">Read More +</p>
+                <p class="description" style="display: none;">Your business is unique and your website should reflect
+                  that.
+                  I curate bespoke websites that stand out.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slick-slide">
+        <div class="inner">
+          <div class="service-container">
+            <div class="card">
+              <h1>FEATURE DESIGN & BUILD</h1>
+              <div class="read-more-container">
+                <p class="read-more">Read More +</p>
+                <p class="description" style="display: none;">Your business is unique and your website should reflect
+                  that.
+                  I curate bespoke websites that stand out.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slick-slide">
+        <div class="inner">
+          <div class="service-container">
+            <div class="card">
+              <h1>FEATURE DESIGN & BUILD</h1>
+              <div class="read-more-container">
+                <p class="read-more">Read More +</p>
+                <p class="description" style="display: none;">Your business is unique and your website should reflect
+                  that.
+                  I curate bespoke websites that stand out.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slick-slide">
+        <div class="inner">
+          <div class="service-container">
+            <div class="card">
+              <h1>FEATURE DESIGN & BUILD</h1>
+              <div class="read-more-container">
+                <p class="read-more">Read More +</p>
+                <p class="description" style="display: none;">Your business is unique and your website should reflect
+                  that.
+                  I curate bespoke websites that stand out.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slick-slide">
+        <div class="inner">
+          <div class="service-container">
+            <div class="card">
+              <h1>FEATURE DESIGN & BUILD</h1>
+              <div class="read-more-container">
+                <p class="read-more">Read More +</p>
+                <p class="description" style="display: none;">Your business is unique and your website should reflect
+                  that.
+                  I curate bespoke websites that stand out.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="main-services-container">
-
-      <div class="service-container">
-        <div class="card">
-          <h1>FEATURE DESIGN & BUILD</h1>
-          <p>Your business is unique and your website should reflect that. I curate bespoke websites that stand out.</p>
-        </div>
-      </div>
-      <div class="service-container">
-        <div class="card">
-          <h1>FEATURE DESIGN & BUILD</h1>
-          <p>Your business is unique and your website should reflect that. I curate bespoke websites that stand out.</p>
-        </div>
-      </div>
-      <div class="service-container">
-        <div class="card">
-          <h1>FEATURE DESIGN & BUILD</h1>
-          <p>Your business is unique and your website should reflect that. I curate bespoke websites that stand out.</p>
-        </div>
-      </div>
-      <div class="service-container">
-        <div class="card">
-          <h1>FEATURE DESIGN & BUILD</h1>
-          <p>Your business is unique and your website should reflect that. I curate bespoke websites that stand out.</p>
-        </div>
-      </div>
     </div>
-  </section>
+
+
+
+
+
+
+
+</div>
+</section>
 
 
 </div>
