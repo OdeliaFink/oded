@@ -83,7 +83,71 @@
       <?php endforeach; ?>
     </div>
   </section>
+  <section>
+    <!-- <h1>CLIENTS</h1> -->
+  </section>
+  <section id="steps-section">
+    <div style="display: grid; grid-template-columns: auto auto; justify-content: space-between;">
 
+      <div class="step-box" style="display: flex; flex-direction: column; width: 567px; padding: 20px 10px;">
+        <div style="title-box">
+          <h1>01</h1>
+          <h1>LISTEN</h1>
+          <hr class="step-divider">
+        </div>
+        <div class="desc" style="font-size: 18px; letter-spacing:4%;">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to
+            make a type specimen book.</p>
+        </div>
+      </div>
+      <div class="step-box" style="display: flex; flex-direction: column; width: 567px; padding: 20px 10px;">
+        <div style="title-box">
+          <h1>02</h1>
+          <h1>FART</h1>
+          <hr class="step-divider">
+        </div>
+        <div class="desc">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make
+            a type specimen book.</p>
+        </div>
+      </div>
+      <div class="step-box" style="display: flex; flex-direction: column; width: 567px; padding: 20px 10px;">
+        <div style="title-box">
+          <h1>03</h1>
+          <h1>GIGGLE</h1>
+          <hr class="step-divider">
+        </div>
+        <div class="desc">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make
+            a type specimen book.</p>
+        </div>
+      </div>
+      <div class="step-box" style="display: flex; flex-direction: column; width: 567px; padding: 20px 10px;">
+        <div style="title-box">
+          <h1>04</h1>
+          <h1>GOSSIP</h1>
+          <hr class="step-divider">
+        </div>
+        <div class="desc">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make
+            a type specimen book.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
 </div>
 
 <?php get_footer(); ?>

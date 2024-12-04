@@ -64,6 +64,12 @@ function enqueue_custom_scripts()
 
 add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
 
+function enqueue_steps_animation_script()
+{
+  wp_enqueue_script('steps-animation', get_stylesheet_directory_uri() . '/assets/js/steps-animation.js', array('gsap'), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_steps_animation_script');
+
 
 function oded_theme_enqueue_styles()
 {
