@@ -13,9 +13,10 @@
     top: -23px;
   }
 
-  /* .service-container {
-    width: 270px;
-  } */
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+  }
 
   .card {
     gap: 8rem;

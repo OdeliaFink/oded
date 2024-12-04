@@ -40,13 +40,44 @@ scriptGsap.onload = () => {
           },
         ],
       });
+      jQuery(document).ready(function ($) {
+        $('.slick-client-logos').slick({
+          autoplay: true,
+          autoplaySpeed: 0, // No delay between scrolls
+          speed: 15000, // Adjust the scrolling speed (lower = faster)
+          cssEase: 'linear', // Smooth continuous scrolling
+          slidesToShow: 1, // Show one slide at a time (will be overridden by variable width)
+          slidesToScroll: 1, // Scroll one at a time
+          infinite: true, // Infinite loop
+          arrows: false, // Disable arrows
+          dots: false, // Disable dots
+          variableWidth: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+    });
+    
 
       // Refresh Slick after initialization
       $('.slick.marquee').slick('refresh');
 
       // GSAP ScrollTrigger Animations for Cards
       setTimeout(() => {
-        const cards = document.querySelectorAll('.slick-slide');
+        const cards = document.querySelectorAll('.slick.marquee .slick-slide');
+
+        // const cards = document.querySelectorAll('.slick-slide');
 
         cards.forEach((card, index) => {
           // Alternate entry directions (left or right)

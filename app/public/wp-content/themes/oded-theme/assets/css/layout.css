@@ -21,6 +21,10 @@ button.slick-prev, button.slick-next {
   /* Ensure they appear above other elements */
 }
 
+#step-section {
+  margin-top: 3rem;
+}
+
 
 /* Layout sections */
 header, footer {
