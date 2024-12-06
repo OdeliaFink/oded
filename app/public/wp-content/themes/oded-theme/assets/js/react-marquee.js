@@ -56,7 +56,7 @@ scriptGsap.onload = () => {
                 {
                     breakpoint: 768,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                     },
                 },
                 {
@@ -122,8 +122,8 @@ scriptGsap.onload = () => {
           });
           serviceContainer.css({
             backgroundColor: 'white', // Reset background color
-            color: '#9FB99F',
-            border: '1px solid #9FB99F', // Reset text color
+            color: '#669067',
+            border: '1px solid #669067', // Reset text color
           });
         } else {
           // Show the description, change styles
@@ -131,7 +131,7 @@ scriptGsap.onload = () => {
             description.fadeIn(150);
           });
           serviceContainer.css({
-            backgroundColor: '#9FB99F', // Set background color
+            backgroundColor: '#669067', // Set background color
             color: 'white', // Set text color
           });
         }

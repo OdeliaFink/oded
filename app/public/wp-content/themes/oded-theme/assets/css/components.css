@@ -225,13 +225,13 @@ header nav li a {
   display: flex;
   align-items: center;
   overflow: hidden;
-  /* Hide excess content for seamless appearance */
+  transform: skewY(0deg);
 }
 
 
 .slick-client-logos img {
-  max-width: 100px;
-  /* Adjust logo size */
+  max-width: 150px;
+  margin: 10px;
   height: auto;
   display: inline-block;
 }
@@ -239,14 +239,16 @@ header nav li a {
 
 .slick-client-logos .slick-slide {
   opacity: 1 !important;
-  /* Ensure visibility */
   transform: none !important;
-  /* Reset transformations */
 }
 
 
 .client-carousel {
-  padding: 2rem 0;
+  position: relative;
+  overflow: hidden;
+  transform: skewY(-5deg);
+
+  padding: 0;
   background-color: var(--color-primary);
   /* Optional */
   text-align: center;
@@ -256,9 +258,10 @@ header nav li a {
 
 
 
+
 .slick-track {
   display: flex;
-  gap: 4rem;
+  gap: 1rem;
 }
 
 
@@ -300,7 +303,7 @@ header nav li a {
 }
 
 .slick-next:before, .slick-prev:before {
-  color: #6F996F;
+  color: #669067;
   font-size: 30px;
   border-radius: 10px;
 }
@@ -310,6 +313,17 @@ header nav li a {
 }
 
 .custom-arrow:hover {
-  color: #6F996F;
+  color: #669067;
   /* Hover effect */
+}
+
+
+.banner-bottom-svg {
+  top: 0;
+  transform: skewY(-5deg);
+}
+
+.banner-top-svg {
+
+  transform: skewY(-5deg);
 }
