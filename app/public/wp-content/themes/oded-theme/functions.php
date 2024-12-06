@@ -199,5 +199,21 @@ function enqueue_hero_text_script()
 }
 add_action('wp_enqueue_scripts', 'enqueue_hero_text_script');
 
+function create_project_post_type()
+{
+  register_post_type('project', [
+    'labels' => [
+      'name' => 'Projects',
+      'singular_name' => 'Project',
+    ],
+    'public' => true,
+    'has_archive' => true,
+    'rewrite' => ['slug' => 'work'], // Sets /work as the archive URL
+    'supports' => ['title', 'editor', 'thumbnail'],
+  ]);
+}
+add_action('init', 'create_project_post_type');
+
+
 
 ?>
