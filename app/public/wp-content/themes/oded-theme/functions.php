@@ -215,5 +215,20 @@ function create_project_post_type()
 add_action('init', 'create_project_post_type');
 
 
+add_filter('acf/rest_api/field_settings/show_in_rest', '__return_true');
+add_filter('acf/rest_api/field_settings/editable', '__return_true');
+
+function enqueue_modal_toggle_script()
+{
+  // Enqueue modal-toggle.js
+  wp_enqueue_script(
+    'modal-toggle', // Unique handle for the script
+    get_stylesheet_directory_uri() . '/assets/js/modal-toggle.js', // Path to your JS file
+    array('jquery'), // Dependencies (e.g., jQuery)
+    null, // Version (optional, null for no version)
+    true // Load in footer
+  );
+}
+add_action('wp_enqueue_scripts', 'enqueue_modal_toggle_script');
 
 ?>
