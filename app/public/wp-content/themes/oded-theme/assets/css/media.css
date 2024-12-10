@@ -76,8 +76,13 @@
     font-size: 10px;
   }
 
+  .work-item {
+    gap: 3rem;
+  }
+
   .work-page {
     padding: 0px;
+    padding-left: 0px;
 
   }
 

@@ -19,12 +19,16 @@
           $company_name = get_field('company_name'); // ACF fields
           $project_name = get_field('project_name');
           $year = get_field('year');
+          $new_badge = get_field('new_badge');
           $responsibilities = get_field('responsibilities');
           $tech_stack = get_field('tech_stack');
           $description = get_field('description');
           ?>
       <div class="work-item">
         <div class="work-info">
+          <?php if ($new_badge): ?>
+          <span class="new-badge">new</span>
+          <?php endif; ?>
           <p class="work-service"><?php echo $project_name; ?> / <?php echo $year; ?></p>
         </div>
         <div class="work-client">
