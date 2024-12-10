@@ -66,4 +66,28 @@
     letter-spacing: -7px;
   }
 
+  .work-client .client-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .work-service {
+
+    font-size: 10px;
+  }
+
+  .work-page {
+    padding: 0px;
+
+  }
+
+  .hover-card {
+    padding: 10px;
+  }
+
+  .hover-card .card-content p {
+
+    font-size: 12px;
+  }
+
 }
