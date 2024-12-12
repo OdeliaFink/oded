@@ -10,6 +10,19 @@ button {
   transition: var(--transition-default);
 }
 
+
+.contact-button {
+  font-size: 39px;
+  cursor: pointer;
+  border-radius: 49px;
+  padding: 5px 40px;
+  background-color: transparent;
+  border: 1px solid black;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-weight: medium;
+}
+
 button:hover {
   background-color: var(--color-primary);
   transform: scale(1.1);
