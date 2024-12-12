@@ -5,17 +5,3 @@
 @import 'layout.css';
 @import 'components.css';
 @import 'media.css';
-
-.new-badge {
-  display: inline-block;
-  background-color: var(--color-secondary);
-  /* Green color */
-  color: white;
-  font-size: 12px;
-  font-weight: light;
-  padding: 5px 10px;
-  border-radius: 20px;
-  margin-right: 40px;
-  /* Space between badge and text */
-  text-transform: lowercase;
-}

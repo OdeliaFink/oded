@@ -77,7 +77,7 @@
   }
 
   .work-item {
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .work-page {
@@ -87,12 +87,23 @@
   }
 
   .hover-card {
+    /* width: auto; */
+    left: 79px !important;
+    max-width: fit-content;
+    /* Full width for smaller screens */
     padding: 10px;
   }
 
   .hover-card .card-content p {
-
     font-size: 12px;
+    /* Reduce font size */
   }
+
+  .new-badge {
+    font-size: 6px;
+    left: 7rem;
+    top: 12.5rem;
+  }
+
 
 }

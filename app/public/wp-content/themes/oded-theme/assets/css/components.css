@@ -358,7 +358,7 @@ header nav li a {
   justify-content: flex-start;
   /* Keep spacing between the service and client name */
   align-items: center;
-  gap: 10rem;
+  gap: 6rem;
   /* Add some spacing between columns */
 }
 
@@ -390,19 +390,38 @@ header nav li a {
   cursor: pointer;
 }
 
+.new-badge {
+  display: inline-block;
+  background-color: var(--color-secondary);
+  /* Green color */
+  color: white;
+  font-size: 12px;
+  font-weight: light;
+  padding: 5px 10px;
+  border-radius: 20px;
+
+  position: absolute;
+  left: 11rem;
+  /* Space between badge and text */
+  text-transform: lowercase;
+}
+
 /* Hover Card Styles */
 .hover-card {
   position: absolute;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
+  width: 300px;
+  /* Set a fixed width */
   background: var(--color-primary);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  transition: opacity 0.5s ease, visibility 0.3s ease;
+  transition: opacity 0.7s ease, visibility 0.3s ease;
   display: none;
-
+  overflow-wrap: break-word;
+  /* Prevent long words from breaking layout */
 }
 
 .hover-card.hidden {
