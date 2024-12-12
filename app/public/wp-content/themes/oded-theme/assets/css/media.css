@@ -10,7 +10,12 @@
   }
 
   .footer-svg-top {
-    top: -23px;
+    top: -7px;
+  }
+
+  .footer-content p {
+    font-size: 14px;
+
   }
 
   .steps-container {

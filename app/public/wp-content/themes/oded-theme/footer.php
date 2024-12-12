@@ -7,10 +7,9 @@
       style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
   </svg>
   <section>
-    <div style="display: flex;flex-direction: row; justify-content: space-between; align-items:center;
-   margin-top: 9px;">
+    <div style="display: flex;flex-direction: row; justify-content: space-between; align-items:center;">
 
-      <div style="display: flex;flex-direction: row; gap: 2rem;">
+      <div style=" display: flex;flex-direction: row; gap: 2rem;">
         <p>email</p>
         <p>linkedin</p>
       </div>

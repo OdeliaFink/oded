@@ -37,7 +37,7 @@ footer {
   margin-top: auto;
   background-color: var(--color-secondary);
   color: black;
-  padding: 15px 0;
+
   text-align: center;
 }
 
@@ -48,7 +48,7 @@ footer {
   margin: 0;
   padding: 0;
   position: relative;
-  top: -40px;
+  top: -35px;
 }
 
 .footer-logo a h1 {
@@ -66,7 +66,7 @@ main {
 }
 
 section {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
 
   margin-inline: 8rem;
 }
