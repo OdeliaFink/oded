@@ -44,8 +44,9 @@ scriptGsap.onload = () => {
         $('.slick-client-logos').slick({
           autoplay: true,
           autoplaySpeed: 0, // No delay between scrolls
-          speed: 15000, // Adjust the scrolling speed (lower = faster)
-          cssEase: 'linear', // Smooth continuous scrolling
+          speed: 2500, // Adjust the scrolling speed (lower = faster)
+          cssEase: 'linear',
+          pauseOnHover: true,
           slidesToShow: 1, // Show one slide at a time (will be overridden by variable width)
           slidesToScroll: 1, // Scroll one at a time
           infinite: true, // Infinite loop

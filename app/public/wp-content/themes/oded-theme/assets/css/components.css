@@ -211,7 +211,7 @@ header nav li a {
 
 .service-section {
   margin-top: var(--spacing-xxxl);
-  margin-bottom: var(--spacing-xxxl);
+  margin-bottom: var(--spacing-xxl);
 
 }
 
@@ -230,16 +230,17 @@ header nav li a {
 
 
 .slick-client-logos img {
-  max-width: 150px;
-  margin: 10px;
-  height: auto;
-  display: inline-block;
+  max-width: 200px;
+  /* margin: 10px;
+  height: auto; */
+  /* display: inline-block; */
 }
 
 
 .slick-client-logos .slick-slide {
   opacity: 1 !important;
   transform: none !important;
+  gap: 60rem;
 }
 
 
