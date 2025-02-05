@@ -23,6 +23,7 @@
           $responsibilities = get_field('responsibilities');
           $tech_stack = get_field('tech_stack');
           $description = get_field('description');
+
           ?>
       <div class="work-item">
         <div class="work-info">
@@ -53,6 +54,7 @@
         <p><strong>Responsibilities:</strong> <span id="card-responsibilities"></span></p>
         <p><strong>Stack:</strong> <span id="card-stack"></span></p>
         <p id="card-description"></p>
+        <img id="card-image" />
       </div>
     </div>
   </div>

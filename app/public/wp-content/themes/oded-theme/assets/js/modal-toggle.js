@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const clients = document.querySelectorAll(".client-name");
     const hoverCard = document.getElementById("hover-card");
-  
+    console.log("HOVER CARD", hoverCard);
     clients.forEach(client => {
       client.addEventListener("mouseenter", function (e) {
         const clientName = this.dataset.client;
