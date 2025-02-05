@@ -82,11 +82,7 @@
       <?php endforeach; ?>
     </div>
   </section>
-<<<<<<< HEAD
-  <svg class="banner-top-svg" style="position: relative; top: 3rem;" viewBox="0 0 4000 100" width="100%" height="100"
-=======
   <!-- <svg class="banner-top-svg" style="position: relative; top: 1rem;" viewBox="0 0 4000 100" width="100%" height="100"
->>>>>>> contact
     xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none">
     <path
       d="M0 50L51.3 48.5C102.7 47 205.3 44 307.8 45.2C410.3 46.3 512.7 51.7 615.2 54.2C717.7 56.7 820.3 56.3 923 56.2C1025.7 56 1128.3 56 1230.8 54.2C1333.3 52.3 1435.7 48.7 1538.2 46.2C1640.7 43.7 1743.3 42.3 1846 42C1948.7 41.7 2051.3 42.3 2154 43.2C2256.7 44 2359.3 45 2461.8 47C2564.3 49 2666.7 52 2769.2 53.2C2871.7 54.3 2974.3 53.7 3077 52.7C3179.7 51.7 3282.3 50.3 3384.8 49C3487.3 47.7 3589.7 46.3 3692.2 45C3794.7 43.7 3897.3 42.3 3948.7 41.7L4000 41L4000 101L3948.7 101C3897.3 101 3794.7 101 3692.2 101C3589.7 101 3487.3 101 3384.8 101C3282.3 101 3179.7 101 3077 101C2974.3 101 2871.7 101 2769.2 101C2666.7 101 2564.3 101 2461.8 101C2359.3 101 2256.7 101 2154 101C2051.3 101 1948.7 101 1846 101C1743.3 101 1640.7 101 1538.2 101C1435.7 101 1333.3 101 1230.8 101C1128.3 101 1025.7 101 923 101C820.3 101 717.7 101 615.2 101C512.7 101 410.3 101 307.8 101C205.3 101 102.7 101 51.3 101L0 101Z"
@@ -108,15 +104,12 @@
       <div><img src="http://oded.local/wp-content/uploads/2024/12/input-onlinepngtools-e1728761233291.png"
           alt="Client Logo 3"></div>
 
-<<<<<<< HEAD
-=======
       <div><img src="http://oded.local/wp-content/uploads/2024/12/input-onlinepngtools-e1728761233291.png"
           alt="Client Logo 1"></div>
       <div><img src="http://oded.local/wp-content/uploads/2024/12/input-onlinepngtools-e1728761233291.png"
           alt="Client Logo 2"></div>
       <div><img src="http://oded.local/wp-content/uploads/2024/12/input-onlinepngtools-e1728761233291.png"
           alt="Client Logo 3"></div>
->>>>>>> contact
     </div>
   </div>
   <svg class="banner-bottom-svg" style="position: relative; top: -.8rem;" viewBox="0 0 4000 100" width="100%"

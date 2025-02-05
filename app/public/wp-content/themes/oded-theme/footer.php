@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="footer-content">
-      <p>&copy; <?php echo date('Y'); ?> ODED STUDIOS</p>
+      <p>&copy; <?php echo date('Y'); ?> ODED WEB</p>
 
     </div>
   </section>
