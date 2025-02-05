@@ -37,3 +37,38 @@ Stack trace:
 #4 /Users/odeliafinkelstein/Local Sites/oded/app/public/index.php(17): require('/Users/odeliafi...')
 #5 {main}
   thrown in /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-includes/formatting.php on line 4467
+[05-Feb-2025 02:09:56 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-content/themes/oded-theme/archive-project.php:4
+Stack trace:
+#0 /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-blog-header.php(19): require_once('/Users/odeliafi...')
+#2 /Users/odeliafinkelstein/Local Sites/oded/app/public/index.php(17): require('/Users/odeliafi...')
+#3 {main}
+  thrown in /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-content/themes/oded-theme/archive-project.php on line 4
+[05-Feb-2025 02:10:10 UTC] PHP Warning:  Trying to access array offset on value of type int in /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-content/themes/oded-theme/archive-project.php on line 4
+[05-Feb-2025 02:23:40 UTC] PHP Fatal error:  Uncaught TypeError: ltrim(): Argument #1 ($string) must be of type string, array given in /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-includes/formatting.php:4467
+Stack trace:
+#0 /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-includes/formatting.php(4467): ltrim(Array)
+#1 /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-content/themes/oded-theme/archive-project.php(42): esc_url(Array)
+#2 /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-includes/template-loader.php(106): include('/Users/odeliafi...')
+#3 /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-blog-header.php(19): require_once('/Users/odeliafi...')
+#4 /Users/odeliafinkelstein/Local Sites/oded/app/public/index.php(17): require('/Users/odeliafi...')
+#5 {main}
+  thrown in /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-includes/formatting.php on line 4467
+[05-Feb-2025 02:23:56 UTC] PHP Fatal error:  Uncaught TypeError: ltrim(): Argument #1 ($string) must be of type string, array given in /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-includes/formatting.php:4467
+Stack trace:
+#0 /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-includes/formatting.php(4467): ltrim(Array)
+#1 /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-content/themes/oded-theme/archive-project.php(42): esc_url(Array)
+#2 /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-includes/template-loader.php(106): include('/Users/odeliafi...')
+#3 /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-blog-header.php(19): require_once('/Users/odeliafi...')
+#4 /Users/odeliafinkelstein/Local Sites/oded/app/public/index.php(17): require('/Users/odeliafi...')
+#5 {main}
+  thrown in /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-includes/formatting.php on line 4467
+[05-Feb-2025 02:24:07 UTC] PHP Fatal error:  Uncaught TypeError: ltrim(): Argument #1 ($string) must be of type string, array given in /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-includes/formatting.php:4467
+Stack trace:
+#0 /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-includes/formatting.php(4467): ltrim(Array)
+#1 /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-content/themes/oded-theme/archive-project.php(42): esc_url(Array)
+#2 /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-includes/template-loader.php(106): include('/Users/odeliafi...')
+#3 /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-blog-header.php(19): require_once('/Users/odeliafi...')
+#4 /Users/odeliafinkelstein/Local Sites/oded/app/public/index.php(17): require('/Users/odeliafi...')
+#5 {main}
+  thrown in /Users/odeliafinkelstein/Local Sites/oded/app/public/wp-includes/formatting.php on line 4467

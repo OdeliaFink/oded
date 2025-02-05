@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const clients = document.querySelectorAll(".client-name");
     const hoverCard = document.getElementById("hover-card");
-    console.log("HOVER CARD", hoverCard);
+    const cardImage = hoverCard.querySelector("#card-image"); 
+
     clients.forEach(client => {
+      
       client.addEventListener("mouseenter", function (e) {
         const clientName = this.dataset.client;
         const service = this.dataset.service;
@@ -17,6 +19,20 @@ document.addEventListener("DOMContentLoaded", function () {
         hoverCard.querySelector("#card-stack").textContent = techStack;
         hoverCard.querySelector("#card-description").textContent = description;
   
+        const imageUrl = this.dataset.image; // ✅ Get Screenshot URL
+
+        console.log("Hovering over:", this.textContent.trim()); // ✅ Debugging: Project Name
+        console.log("Image URL:", imageUrl); // ✅ Debugging: Ensure different images per project
+
+        // ✅ Set the image dynamically
+        if (imageUrl) {
+            cardImage.src = imageUrl; 
+            cardImage.classList.remove("hidden"); // Show image
+        } else {
+            cardImage.src = ""; // Prevent broken images
+            cardImage.classList.add("hidden"); // Hide if no image
+        }
+
         // Get hover card dimensions
         const hoverCardRect = hoverCard.getBoundingClientRect();
         const cardWidth = hoverCardRect.width;

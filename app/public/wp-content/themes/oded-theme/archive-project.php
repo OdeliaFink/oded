@@ -23,6 +23,8 @@
           $responsibilities = get_field('responsibilities');
           $tech_stack = get_field('tech_stack');
           $description = get_field('description');
+          $image = get_field('image');
+          $image_url = $image ? esc_url($image['url']) : '';
 
           ?>
       <div class="work-item">
@@ -35,8 +37,8 @@
         <div class="work-client">
           <a href="#" class="client-name" data-description="<?php echo $description; ?>"
             data-client="<?php echo $company_name; ?>" data-service="<?php echo $project_name; ?>"
-            data-responsibilities="<?php echo $responsibilities; ?>"
-            data-tech-stack="<?php echo $tech_stack; ?>"><?php the_title(); ?></a>
+            data-responsibilities="<?php echo $responsibilities; ?>" data-tech-stack="<?php echo $tech_stack; ?>"
+            data-image="<?php echo esc_url($image_url); ?>"><?php the_title(); ?></a>
         </div>
       </div>
       <?php endwhile;
@@ -49,14 +51,22 @@
     <!-- Hover Card -->
     <div id="hover-card" class="hover-card hidden">
       <div class="card-content">
-        <p><strong>Client:</strong> <span id="card-client"></span></p>
-        <p><strong>Service:</strong> <span id="card-service"></span></p>
-        <p><strong>Responsibilities:</strong> <span id="card-responsibilities"></span></p>
-        <p><strong>Stack:</strong> <span id="card-stack"></span></p>
-        <p id="card-description"></p>
-        <img id="card-image" />
+        <!-- Left Column: Text Info -->
+        <div class="hover-card-text">
+          <p><strong>Client:</strong> <span id="card-client"></span></p>
+          <p><strong>Service:</strong> <span id="card-service"></span></p>
+          <p><strong>Responsibilities:</strong> <span id="card-responsibilities"></span></p>
+          <p><strong>Stack:</strong> <span id="card-stack"></span></p>
+          <p id="card-description"></p>
+        </div>
+
+        <!-- Right Column: Image -->
+        <div class="hover-card-image">
+          <img id="card-image" src="" alt="Project Screenshot" class="hidden">
+        </div>
       </div>
     </div>
+
   </div>
 </div>
 
