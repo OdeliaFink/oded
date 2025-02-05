@@ -12,7 +12,8 @@
     <div class="container">
       <div class="header-logo">
         <a href="<?php echo esc_url(home_url('/')); ?>">
-          <h1>ODED</h1>
+          <img src="http://oded.local/wp-content/uploads/2025/02/ODED-4.png" style="height: 100px; width: 250px;"
+            alt="">
         </a>
         <p class="header-desc">CREATIVE WEB STUDIO</p>
       </div>
