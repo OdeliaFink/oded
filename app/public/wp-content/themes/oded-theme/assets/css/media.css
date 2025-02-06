@@ -72,8 +72,8 @@
   }
 
   .work-client .client-name {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 21px;
+    font-weight: 400;
   }
 
   .work-service {
@@ -106,8 +106,10 @@
 
   .new-badge {
     font-size: 6px;
-    left: 7rem;
-    top: 12.5rem;
+    left: 1rem;
+    top: 294px;
+
+
   }
 
 
