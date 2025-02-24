@@ -1,0 +1,7 @@
+/* Import Global CSS Variables and Base Styles */
+@import 'variables.css';
+@import 'base.css';
+@import 'typography.css';
+@import 'layout.css';
+@import 'components.css';
+@import 'media.css';

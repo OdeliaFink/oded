@@ -1,0 +1,79 @@
+/* Global container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.home-content {
+  margin-block: 3rem;
+}
+
+button.slick-prev, button.slick-next {
+  margin-top: 2rem;
+  display: block !important;
+  /* Force visibility */
+
+  /* Highlight arrows temporarily */
+  color: white !important;
+  z-index: 1000;
+  /* Ensure they appear above other elements */
+}
+
+#step-section {
+  margin-top: 3rem;
+}
+
+
+/* Layout sections */
+header, footer {
+  background-color: #fff;
+  margin-top: var(--spacing-sm);
+  text-align: center;
+}
+
+footer {
+  margin-top: auto;
+  background-color: var(--color-secondary);
+  color: black;
+
+  text-align: center;
+}
+
+.footer-svg-top {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -25px;
+}
+
+.footer-logo a h1 {
+  font-size: var(--size-xxl);
+  font-weight: 200;
+  letter-spacing: -12px;
+  text-transform: uppercase;
+  font-family: 'Rock 3D', sans-serif;
+
+}
+
+main {
+  padding: var(--spacing-lg) 0;
+
+}
+
+section {
+  margin-bottom: var(--spacing-md);
+
+  margin-inline: 8rem;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+}

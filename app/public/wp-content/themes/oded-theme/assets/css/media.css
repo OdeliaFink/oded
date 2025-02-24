@@ -1,0 +1,120 @@
+@media (max-width: 768px) {
+  .header-logo {
+
+    gap: 0px;
+  }
+
+  .logo-oded {
+    height: 20px;
+  }
+
+  #hamburger {
+    width: 68px;
+    height: 68px;
+  }
+
+  .footer-svg-top {
+    top: -7px;
+  }
+
+  .footer-content p {
+    font-size: 14px;
+
+  }
+
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    gap: 8rem;
+    padding-inline: 10px;
+
+  }
+
+  .card p {
+    font-size: var(--size-xs);
+  }
+
+  .service-section {
+    margin-top: var(--spacing-xl);
+  }
+
+  section {
+    margin-bottom: var(--spacing-lg);
+
+    margin-inline: 1rem;
+  }
+
+
+  header {
+    height: 4rem;
+  }
+
+  .header-desc {
+    font-size: 10px;
+  }
+
+  #hero-text span {
+    font-size: var(--size-xl);
+
+  }
+
+  #hero-text {
+    line-height: 40%;
+  }
+
+  .site-header {
+    width: auto !important;
+    flex-direction: column;
+  }
+
+  .footer-logo a h1 {
+    font-size: 30px;
+    letter-spacing: -7px;
+  }
+
+  .work-client .client-name {
+    font-size: 21px;
+    font-weight: 400;
+  }
+
+  .work-service {
+
+    font-size: 10px;
+  }
+
+  .work-item {
+    gap: 2rem;
+  }
+
+  .work-page {
+    padding: 0px;
+    padding-left: 0px;
+
+  }
+
+  .hover-card {
+    /* width: auto; */
+    left: 79px !important;
+    max-width: fit-content;
+    /* Full width for smaller screens */
+    padding: 10px;
+  }
+
+  .hover-card .card-content p {
+    font-size: 12px;
+    /* Reduce font size */
+  }
+
+  .new-badge {
+    font-size: 6px;
+    left: 1rem;
+    top: 294px;
+
+
+  }
+
+
+}

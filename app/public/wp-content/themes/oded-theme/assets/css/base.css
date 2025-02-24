@@ -1,0 +1,36 @@
+/* Reset and Normalize */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+html {
+  font-size: var(--size-sm);
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-accent);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh !important;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-default);
+}
+
+a:focus,
+button:focus {
+  outline: 2px solid var(--font-primary);
+  ;
+}

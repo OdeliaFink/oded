@@ -1,0 +1,552 @@
+/* Buttons */
+button {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-size: var(--size-sm);
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+  border-radius: 23px;
+  cursor: pointer;
+  transition: var(--transition-default);
+}
+
+
+.contact-button {
+  font-size: 39px;
+  cursor: pointer;
+  border-radius: 49px;
+  padding: 5px 40px;
+  background-color: transparent;
+  border: 1px solid black;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-weight: medium;
+}
+
+button:hover {
+  background-color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8rem;
+  padding-top: 26px;
+  padding-inline: 20px;
+  cursor: grab;
+  /* Default "grab" cursor for draggable appearance */
+  transition: transform 0.2s ease;
+}
+
+.card:active {
+  cursor: grabbing;
+  /* "Grabbing" cursor when the card is being dragged */
+}
+
+
+.card h1 {
+  font-size: var(--size-sm2);
+  max-width: 80%;
+}
+
+/* Forms */
+input, textarea, select {
+  padding: var(--spacing-sm);
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  width: 100%;
+  margin-bottom: var(--spacing-md);
+}
+
+#hero-text {
+  visibility: hidden;
+  /* Hidden by default */
+  font-weight: var(--weight-xl);
+  font-size: var(--size-xxxl);
+  line-height: 65%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+#hero-text span {
+  font-size: var(--size-xxl);
+}
+
+#hamburger {
+  width: 120px;
+  /* Initial size */
+  height: 120px;
+  /* Initial size */
+  cursor: pointer;
+  /* Makes it clickable */
+
+}
+
+#hamburger:hover {
+  transform: scale(1.1);
+  /* Grows 10% bigger on hover */
+}
+
+header {
+  line-height: 0;
+  height: 7rem;
+  position: relative;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+header .container {
+  flex-grow: 1;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header nav {
+  flex-basis: 100%;
+  line-height: 1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+}
+
+header nav .main-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header nav .main-menu li {
+  opacity: 0;
+  overflow: hidden;
+}
+
+header nav li {
+  background: white;
+
+}
+
+
+header nav li a {
+  text-transform: uppercase;
+  display: flex;
+  font-size: 40px;
+  padding: 1rem;
+  max-width: 75rem;
+  margin: auto;
+  color: black;
+  text-decoration: none;
+
+}
+
+.current-date {
+  text-align: right;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.month {
+  font-family: 'DM Serif Text' !important;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: var(--size-md);
+}
+
+.date {
+  font-family: 'Rock 3D';
+  font-size: var(--size-xl);
+}
+
+.star {
+  font-size: var(--size-xl);
+  font-family: var(--font-secondary);
+}
+
+
+.service-heading {
+  margin-block: 3rem;
+}
+
+
+.current-date h1 {
+  font-family: 'Rock 3D';
+  font-size: var(--size-xxxl);
+  font-weight: var(--weight-sm);
+  letter-spacing: -22px;
+}
+
+.service-container {
+  height: 317px;
+  /* max-width: 326px; */
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid var(--color-secondary);
+  color: var(--color-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-xxl);
+}
+
+.step-box {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 20px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+
+}
+
+.number-heading {
+  color: var(--color-secondary);
+  font-weight: 300;
+}
+
+/* Black Divider */
+.black-divider {
+  border: none;
+  width: 83%;
+  margin-inline: auto;
+  margin-bottom: var(--spacing-lg);
+  height: 1px;
+  background-color: black;
+}
+
+.service-section {
+  margin-top: var(--spacing-xxxl);
+  margin-bottom: var(--spacing-xxl);
+
+}
+
+.slick-dots li button:before {
+  font-size: 20px;
+}
+
+
+
+.slick-client-logos {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transform: skewY(0deg);
+}
+
+
+.slick-client-logos img {
+  max-width: 200px;
+  /* margin: 10px;
+  height: auto; */
+  /* display: inline-block; */
+}
+
+
+.slick-client-logos .slick-slide {
+  opacity: 1 !important;
+  transform: none !important;
+  gap: 60rem;
+}
+
+
+.client-carousel {
+  position: relative;
+  overflow: hidden;
+  transform: skewY(-5deg);
+
+  padding: 0;
+  background-color: var(--color-primary);
+  /* Optional */
+  text-align: center;
+}
+
+/* General Styles */
+.project-list,
+.project-responsibilities {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-responsibilities,
+.project-tech-stack {
+  column-count: 2;
+  /* Display in two columns */
+  column-gap: 20px;
+  /* Gap between columns */
+}
+
+.project-responsibilities li {
+  margin-bottom: 10px;
+  break-inside: avoid;
+  /* Prevent breaking list items across columns */
+}
+
+.project-tech-stack {
+  margin-top: 10px;
+}
+
+/* Slick Slide Animation */
+.slick-slide {
+  opacity: 0;
+  /* Hidden by default */
+  transform: translateY(50px);
+  /* Offset slightly below */
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Modal Styles */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Work Page Styles */
+.work-page {
+  padding: 50px 20px;
+  padding-left: 10rem;
+  font-family: Arial, sans-serif;
+}
+
+.work-grid {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  margin-inline: auto;
+}
+
+
+.work-service {
+  font-family: var(--font-primary);
+  font-size: 30px;
+  color: black;
+  font-weight: lighter;
+  letter-spacing: 1%;
+}
+
+.work-item {
+  display: flex;
+  justify-content: flex-start;
+  /* Keep spacing between the service and client name */
+  align-items: center;
+  gap: 6rem;
+  /* Add some spacing between columns */
+}
+
+.work-client {
+  text-align: left;
+  /* Ensure content in this container is left-aligned */
+}
+
+.client-name {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: medium;
+  letter-spacing: 1%;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  /* Ensure the text aligns left and spans the available width */
+}
+
+
+.work-client .client-name {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: medium;
+  letter-spacing: 1%;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.new-badge {
+  display: inline-block;
+  background-color: var(--color-secondary);
+  /* Green color */
+  color: white;
+  font-size: 12px;
+  font-weight: light;
+  padding: 5px 10px;
+  border-radius: 20px;
+
+  position: absolute;
+  left: 11rem;
+  /* Space between badge and text */
+  text-transform: lowercase;
+}
+
+#hover-card {
+  position: absolute;
+  background-color: #6d8c6c;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+#hover-card .card-content {
+  display: flex;
+  flex-direction: column;
+  /* Keep everything stacked */
+  gap: 10px;
+}
+
+/* ✅ Ensure the image has a max size */
+#card-image {
+  width: 350px;
+  /* ✅ Adjust width */
+  max-width: 100%;
+  /* ✅ Prevent it from overflowing */
+  height: auto;
+  /* ✅ Maintain aspect ratio */
+  max-height: 200px;
+  /* ✅ Prevent overly tall images */
+  border-radius: 8px;
+  display: block;
+  /* ✅ Ensure it appears properly */
+  object-fit: cover;
+  /* ✅ Make sure it doesn't stretch */
+}
+
+.hover-card.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hover-card .card-content p {
+  margin: 10px 0;
+  font-family: var(--font-primary);
+  font-size: 16px;
+}
+
+
+
+
+
+
+.slick-track {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.description {
+  font-size: 13px;
+}
+
+
+
+
+
+.read-more {
+  background-color: transparent;
+  padding: 0;
+  color: #9FB99F;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition-default);
+
+}
+
+.read-more :hover {
+  background-color: transparent;
+
+
+}
+
+/* Adjust left and right arrows relative to center */
+.slick-prev {
+  margin-right: 40px;
+  left: 0px !important;
+  /* Adjust spacing between arrows */
+}
+
+.slick-next {
+  margin-left: 40px;
+  right: 0px !important;
+  /* Adjust spacing between arrows */
+}
+
+.slick-next:before, .slick-prev:before {
+  color: #669067;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.slick-next, .slick-prev {
+  top: 21rem !important;
+}
+
+.custom-arrow:hover {
+  color: #669067;
+  /* Hover effect */
+}
+
+
+.banner-bottom-svg {
+  top: 0;
+  transform: skewY(-5deg);
+}
+
+.banner-top-svg {
+
+  transform: skewY(-5deg);
+}
