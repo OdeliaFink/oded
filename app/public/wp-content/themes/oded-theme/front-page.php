@@ -1,36 +1,26 @@
 <?php get_header(); ?>
 
-<div>
-  <section>
-    <!-- React Root -->
-    <div id="react-root"></div>
 
-    <?php
-    // Get the current date
-    $current_month = date('M'); // Format: "Oct"
-    $current_date = date('j'); // Format: "6"
-    ?>
-
-    <!-- Current Date Section -->
-    <!-- <div class="current-date">
-      <p class="star">*</p>
-      <h1 class="date"><?php echo $current_date; ?></h1>
-      <p class="month"><?php echo $current_month; ?></p>
-    </div> -->
-
-    <!-- Hero Text Section -->
-    <div id="hero-text">
-      <h1>A WEB DESIGN STUDIO UNIFYING FORM AND FUNCTION</h1>
+<div id="hero-wrapper">
+  <section id="hero-section" >
+    <div id="text-container" style="margin-left: -11rem; margin-bottom: 4rem; margin-top: 2rem;">
+      <h1 style="line-height: 4.5rem; font-size: 4rem; font-weight: 100; letter-spacing: 0.4px;">
+        <span class="first">CREATIVE PLAYGROUND<br>
+        THAT UNIFIES FORM + FUNCTION </span> 
+        <span class="second"> THROUGH PURPOSEFUL CREATION</span>
+      </h1>
     </div>
     <div style="text-align: right;">
       <button>LEARN MORE</button>
     </div>
   </section>
+</div>
+
 
   <section class="service-section">
     <!-- Services Heading -->
     <div class="service-heading">
-      <h1 style="font-family: 'DM Serif Text'; font-size: 70px;">SERVICES</h1>
+      <h1>SERVICES</h1>
     </div>
 
     <!-- Service Slider -->
@@ -119,7 +109,7 @@
       fill="#9FB99F" stroke-linecap="round" stroke-linejoin="miter"></path>
   </svg> -->
 
-  <section id="steps-section">
+  <!-- <section id="steps-section">
     <div class="steps-container">
 
       <div class="step-box">
@@ -172,7 +162,7 @@
     </div>
 
 
-  </section>
+  </section> -->
 </div>
 
 <?php get_footer(); ?>

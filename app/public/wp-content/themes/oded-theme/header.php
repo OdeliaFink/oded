@@ -15,7 +15,7 @@
           <img src="http://oded.local/wp-content/uploads/2025/02/ODED-6.png" style="height: 60px; width: 150px;" alt=""
             class="logo-oded">
         </a>
-        <p class="header-desc">CREATIVE WEB STUDIO</p>
+        <p class="header-desc"> WEB STUDIO</p>
       </div>
       <svg id="hamburger" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <path fill="#9FB99F"

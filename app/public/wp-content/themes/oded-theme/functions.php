@@ -99,13 +99,11 @@ function oded_theme_enqueue_styles()
 add_action('wp_enqueue_scripts', 'oded_theme_enqueue_styles');
 
 // Enqueue Google Fonts
-function oded_theme_enqueue_fonts()
-{
-  wp_enqueue_style(
-    'google-fonts',
-    'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rock+3D&family=DM+Serif+Display&display=swap',
-
-  );
+function oded_theme_enqueue_fonts() {
+  wp_enqueue_style('google-fonts-roboto', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap', [], null);
+  wp_enqueue_style('google-fonts-dm-serif', 'https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap', [], null);
+  wp_enqueue_style('Inter', "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap", [], null);
+  wp_enqueue_style('Lora', "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&display=swap", [], null);
 }
 add_action('wp_enqueue_scripts', 'oded_theme_enqueue_fonts');
 

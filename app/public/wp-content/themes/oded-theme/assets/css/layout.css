@@ -3,6 +3,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: transparent;
   padding: 0 var(--spacing-md);
 }
 
@@ -13,18 +14,13 @@
 button.slick-prev, button.slick-next {
   margin-top: 2rem;
   display: block !important;
-  /* Force visibility */
-
-  /* Highlight arrows temporarily */
   color: white !important;
   z-index: 1000;
-  /* Ensure they appear above other elements */
 }
 
 #step-section {
   margin-top: 3rem;
 }
-
 
 /* Layout sections */
 header, footer {
@@ -34,7 +30,7 @@ header, footer {
 }
 
 footer {
-  margin-top: auto;
+
   background-color: var(--color-secondary);
   color: black;
 

@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   animate(
     wordElements,
     { opacity: [0, 1], transform: ["translateY(50px)", "translateY(0)"] },
-    { duration: 0.5, delay: stagger(0.2), ease: "easeOut" }
+    { duration: 0.5, delay: stagger(0.02), ease: "easeOut" }
   ).then(() => {
     console.log("Hero text animation completed.");
   });

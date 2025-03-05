@@ -1,6 +1,6 @@
 /* Buttons */
 button {
-  padding: var(--spacing-sm) var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-xl);
   font-size: var(--size-sm);
   background-color: var(--color-secondary);
   color: white;
@@ -12,7 +12,7 @@ button {
 
 
 .contact-button {
-  font-size: 39px;
+  font-size: 20px;
   cursor: pointer;
   border-radius: 49px;
   padding: 5px 40px;
@@ -21,6 +21,22 @@ button {
   font-family: var(--font-primary);
   text-transform: uppercase;
   font-weight: medium;
+}
+
+.contact-button:hover {
+  background-color: #9fb99f;
+  color: #fff;
+  cursor: pointer;
+  border: #9fb99f;
+  transform: scale(.95);
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* Adjusted spacing between bubbles */
+  justify-content: center;
 }
 
 button:hover {
@@ -66,8 +82,8 @@ input, textarea, select {
   visibility: hidden;
   /* Hidden by default */
   font-weight: var(--weight-xl);
-  font-size: var(--size-xxxl);
-  line-height: 65%;
+  font-size: var(--size-4xl);
+  line-height: 50%;
   margin-top: 2rem;
   margin-bottom: 5rem;
 }
@@ -75,6 +91,22 @@ input, textarea, select {
 #hero-text span {
   font-size: var(--size-xxl);
 }
+
+#hero-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -5rem;
+  right: 5%;
+  width: 140%;
+  height: 160%;
+  background: radial-gradient(circle, 
+    rgba(255, 204, 0, 0.4) 10%,  /* Bright center */
+    rgba(255, 204, 0, 0.04) 25%,  /* Soft fade */
+    rgba(255, 204, 0, 0) 80%);   /* Fully transparent */
+  z-index: -1;
+  pointer-events: none;
+}
+
 
 #hamburger {
   width: 120px;
@@ -100,6 +132,7 @@ header {
 }
 
 header .container {
+
   flex-grow: 1;
   margin: auto;
   display: flex;
@@ -116,6 +149,7 @@ header nav {
   left: 0;
   width: 100%;
   visibility: hidden;
+  z-index: 20;
 }
 
 header nav .main-menu ul {
@@ -132,7 +166,8 @@ header nav .main-menu li {
 }
 
 header nav li {
-  background: white;
+  background: #f5f1cf;
+  
 
 }
 
@@ -140,6 +175,7 @@ header nav li {
 header nav li a {
   text-transform: uppercase;
   display: flex;
+  justify-content: flex-end;
   font-size: 40px;
   padding: 1rem;
   max-width: 75rem;
@@ -148,6 +184,10 @@ header nav li a {
   text-decoration: none;
 
 }
+
+/* .header-desc{
+  font-family: var(--font-secondary);
+} */
 
 .current-date {
   text-align: right;
@@ -158,35 +198,16 @@ header nav li a {
   align-items: flex-end;
 }
 
-.month {
-  font-family: 'DM Serif Text' !important;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  font-size: var(--size-md);
-}
-
-.date {
-  font-family: 'Rock 3D';
-  font-size: var(--size-xl);
-}
-
-.star {
-  font-size: var(--size-xl);
-  font-family: var(--font-secondary);
-}
-
-
 .service-heading {
   margin-block: 3rem;
 }
 
-
-.current-date h1 {
-  font-family: 'Rock 3D';
-  font-size: var(--size-xxxl);
-  font-weight: var(--weight-sm);
-  letter-spacing: -22px;
+.service-heading h1 {
+  font-family: var(--font-primary);
+  font-size: 4rem;
+  font-weight: 600;
 }
+
 
 .service-container {
   height: 317px;
@@ -356,13 +377,13 @@ header nav li a {
 
 /* Work Page Styles */
 .work-page {
-  padding: 50px 20px;
-  padding-left: 10rem;
+  padding: 20px;
   font-family: Arial, sans-serif;
 }
 
 .work-grid {
   display: grid;
+  justify-content: center;
   gap: 1rem;
   width: 100%;
   margin-inline: auto;
@@ -423,9 +444,8 @@ header nav li a {
   font-weight: light;
   padding: 5px 10px;
   border-radius: 20px;
-
   position: absolute;
-  left: 11rem;
+  left: 13rem;
   /* Space between badge and text */
   text-transform: lowercase;
 }
